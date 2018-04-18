@@ -5,7 +5,7 @@
 vars = {
   # The dart_root is the root of our sdk checkout. This is normally
   # simply sdk, but if using special gclient specs it can be different.
-  "dart_root": "sdk",
+  "dart_root": "bullseye",
 
   # We use mirrors of all github repos to guarantee reproducibility and
   # consistency between what users see and what the bots see.
