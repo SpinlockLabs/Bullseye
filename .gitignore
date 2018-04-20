@@ -35,7 +35,6 @@
 # IntelliJ project files
 *.iml
 .idea
-CMakeLists.txt
 .clang_complete
 
 # VSCode project files
