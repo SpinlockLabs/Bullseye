@@ -468,31 +468,31 @@ hooks = [
     # Pull Debian wheezy sysroot for i386 Linux
     'name': 'sysroot_i386',
     'pattern': '.',
-    'action': ['python', 'sdk/build/linux/sysroot_scripts/install-sysroot.py',
+    'action': ['python', 'bullseye/build/linux/sysroot_scripts/install-sysroot.py',
                '--running-as-hook', '--arch', 'i386'],
   },
   {
     # Pull Debian wheezy sysroot for amd64 Linux
     'name': 'sysroot_amd64',
     'pattern': '.',
-    'action': ['python', 'sdk/build/linux/sysroot_scripts/install-sysroot.py',
+    'action': ['python', 'bullseye/build/linux/sysroot_scripts/install-sysroot.py',
                '--running-as-hook', '--arch', 'amd64'],
   },
   {
     'name': 'download_android_tools',
     'pattern': '.',
-    'action': ['python', 'sdk/tools/android/download_android_tools.py'],
+    'action': ['python', 'bullseye/tools/android/download_android_tools.py'],
   },
   {
     'name': 'buildtools',
     'pattern': '.',
-    'action': ['python', 'sdk/tools/buildtools/update.py'],
+    'action': ['python', 'bullseye/tools/buildtools/update.py'],
   },
   {
     # Update the Windows toolchain if necessary.
     'name': 'win_toolchain',
     'pattern': '.',
-    'action': ['python', 'sdk/build/vs_toolchain.py', 'update'],
+    'action': ['python', 'bullseye/build/vs_toolchain.py', 'update'],
   },
   {
     "pattern": ".",
